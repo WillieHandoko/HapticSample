@@ -6,20 +6,74 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		13016AFA2CD0DF7F00A430A0 /* HapticSampleWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 13016AED2CD0DF7E00A430A0 /* HapticSampleWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13016AF82CD0DF7F00A430A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13016AD02CD0DF6200A430A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13016AEC2CD0DF7E00A430A0;
+			remoteInfo = "HapticSampleWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13016AFE2CD0DF7F00A430A0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				13016AFA2CD0DF7F00A430A0 /* HapticSampleWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13016AD82CD0DF6200A430A0 /* HapticSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13016AED2CD0DF7E00A430A0 /* HapticSampleWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HapticSampleWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		13016B762CD14B5300A430A0 /* Exceptions for "HapticSample" folder in "HapticSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 13016AD72CD0DF6200A430A0 /* HapticSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		13016ADA2CD0DF6200A430A0 /* HapticSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				13016B762CD14B5300A430A0 /* Exceptions for "HapticSample" folder in "HapticSample" target */,
+			);
 			path = HapticSample;
+			sourceTree = "<group>";
+		};
+		13016AEE2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HapticSampleWatch Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13016AD52CD0DF6200A430A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13016AEA2CD0DF7E00A430A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				13016ADA2CD0DF6200A430A0 /* HapticSample */,
+				13016AEE2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */,
 				13016AD92CD0DF6200A430A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				13016AD82CD0DF6200A430A0 /* HapticSample.app */,
+				13016AED2CD0DF7E00A430A0 /* HapticSampleWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				13016AD42CD0DF6200A430A0 /* Sources */,
 				13016AD52CD0DF6200A430A0 /* Frameworks */,
 				13016AD62CD0DF6200A430A0 /* Resources */,
+				13016AFE2CD0DF7F00A430A0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13016AF92CD0DF7F00A430A0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				13016ADA2CD0DF6200A430A0 /* HapticSample */,
@@ -68,6 +126,28 @@
 			);
 			productName = HapticSample;
 			productReference = 13016AD82CD0DF6200A430A0 /* HapticSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13016AEC2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13016AFB2CD0DF7F00A430A0 /* Build configuration list for PBXNativeTarget "HapticSampleWatch Watch App" */;
+			buildPhases = (
+				13016AE92CD0DF7E00A430A0 /* Sources */,
+				13016AEA2CD0DF7E00A430A0 /* Frameworks */,
+				13016AEB2CD0DF7E00A430A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				13016AEE2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */,
+			);
+			name = "HapticSampleWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "HapticSampleWatch Watch App";
+			productReference = 13016AED2CD0DF7E00A430A0 /* HapticSampleWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					13016AD72CD0DF6200A430A0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					13016AEC2CD0DF7E00A430A0 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				13016AD72CD0DF6200A430A0 /* HapticSample */,
+				13016AEC2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13016AD62CD0DF6200A430A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13016AEB2CD0DF7E00A430A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13016AE92CD0DF7E00A430A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13016AF92CD0DF7F00A430A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13016AEC2CD0DF7E00A430A0 /* HapticSampleWatch Watch App */;
+			targetProxy = 13016AF82CD0DF7F00A430A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13016AE42CD0DF6400A430A0 /* Debug */ = {
@@ -255,6 +361,7 @@
 				DEVELOPMENT_TEAM = 459W9TDYSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +391,7 @@
 				DEVELOPMENT_TEAM = 459W9TDYSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +407,68 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13016AFC2CD0DF7F00A430A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HapticSampleWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 459W9TDYSS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HapticSampleWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HapticSampleWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = williehandoko.HapticSample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = williehandoko.HapticSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		13016AFD2CD0DF7F00A430A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HapticSampleWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 459W9TDYSS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HapticSampleWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HapticSampleWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = williehandoko.HapticSample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = williehandoko.HapticSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -319,6 +489,15 @@
 			buildConfigurations = (
 				13016AE72CD0DF6400A430A0 /* Debug */,
 				13016AE82CD0DF6400A430A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13016AFB2CD0DF7F00A430A0 /* Build configuration list for PBXNativeTarget "HapticSampleWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13016AFC2CD0DF7F00A430A0 /* Debug */,
+				13016AFD2CD0DF7F00A430A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
